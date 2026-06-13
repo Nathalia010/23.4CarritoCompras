@@ -1,208 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
     <title>Carrito de compras</title>
-</head>
-<body>
-
-    <nav class="navbar navbar-light bg-light">
-        <span class="navbar-brand mb-2 h1">Tienda Peluditos</span>
-        <div class="d-flex align-items-center">
-            <span  class="navbar-brand mb-2 h1">Carrito</span>
-            <span id="badge" class="badge bg-white navbar-brand mb-2 h1 ">0</span>
-        </div>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light d-flex align-items-center px-5">
+      <span class="navbar-brand mb-0 h2 ">Tienda Peluditos</span>
+      <div class="d-flex align-items-center">
+        <button class="btn btn-carrito">
+         Carrito
+        <span id="badge" class="badge bg-light text-dark">0</span>
+    </button>
+      </div>
     </nav>
-<!-- PRODUCTOS Opcion A-->
-    <div class="card-group">
-  <div class="card">
-    <img src="-" class="card-img-top" alt="..">
-    <div class="card-body">
-      <h5 class="card-title">Antiparasitario</h5>
-      
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-         <button
-                            class="btn btn-primary btn-agregar"
-                            data-nombre="Antiparasitario"
-                            data-precio="35000">
-                            Agregar al carrito
-                        </button>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Galletas gato</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-        <button
-                            class="btn btn-primary btn-agregar"
-                            data-nombre="Galletas gato"
-                            data-precio="2000">
-                            Agregar al carrito
-                        </button>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Galletas perro</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-     <button
-                            class="btn btn-primary btn-agregar"
-                            data-nombre="Galletas perro"
-                            data-precio="2000">
-                            Agregar al carrito
-                        </button>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-</div>
-<div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Comida para aves</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-     <button
-                            class="btn btn-primary btn-agregar"
-                            data-nombre="Comida para aves"
-                            data-precio="2000">
-                            Agregar al carrito
-                        </button>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-</div>
 
+    <!-- PRODUCTOS Opcion B -->
+    <div class="row">
+      <!-- Producto 1 -->
+      <div class="col-md-3 mb-3">
+        <div class="card h-100">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ3A160jjeiRwSpxFlMqs1Xbh2iZoyOYKing&s"
+            class="card-img-top"
+            alt="Antiparacitante"
+          />
 
+          <div class="card-body">
+            <h5 class="card-title">Antiparacitante</h5>
+            <p class="card-text">$95.000</p>
 
-<div class="container mt-4">
-
-        <!-- PRODUCTOS Opcion B -->
-        <div class="row">
-
-            <!-- Producto 1 -->
-            <div class="col-md-3 mb-3">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/250"
-                         class="card-img-top"
-                         alt="Concentrado">
-
-                    <div class="card-body">
-                        <h5 class="card-title">Concentrado Premium</h5>
-                        <p class="card-text">$50.000</p>
-
-                        <button
-                            class="btn btn-primary btn-agregar"
-                            data-nombre="Concentrado Premium"
-                            data-precio="50000">
-                            Agregar al carrito
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Producto 2 -->
-            <div class="col-md-3 mb-3">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/250"
-                         class="card-img-top"
-                         alt="Juguete">
-
-                    <div class="card-body">
-                        <h5 class="card-title">Juguete Mordedor</h5>
-                        <p class="card-text">$15.000</p>
-
-                        <button
-                            class="btn btn-primary btn-agregar"
-                            data-nombre="Juguete Mordedor"
-                            data-precio="15000">
-                            Agregar al carrito
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Producto 3 -->
-            <div class="col-md-3 mb-3">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/250"
-                         class="card-img-top"
-                         alt="Correa">
-
-                    <div class="card-body">
-                        <h5 class="card-title">Correa Ajustable</h5>
-                        <p class="card-text">$25.000</p>
-
-                        <button
-                            class="btn btn-primary btn-agregar"
-                            data-nombre="Correa Ajustable"
-                            data-precio="25000">
-                            Agregar al carrito
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Productos b -->
-            <div class="col-md-3 mb-3">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/250"
-                         class="card-img-top"
-                         alt="Cama">
-
-                    <div class="card-body">
-                        <h5 class="card-title">Cama para Mascota</h5>
-                        <p class="card-text">$80.000</p>
-
-                        <button
-                            class="btn btn-primary btn-agregar"
-                            data-nombre="Cama para Mascota"
-                            data-precio="80000">
-                            Agregar al carrito
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- CARRITO -->
-        <div class="mt-5">
-            <h2 class=" mb-3">Carrito de Compras</h2>
-            <ul id="lista-carrito" class="list-group mb-3">
-            </ul>
-            <h4>
-                Total:
-                $<span id="total">0</span>
-            </h4>
-            <button id="btn-vaciar" class="btn btn-danger">
-                Vaciar carrito
+            <button
+              class="btn btn-primary btn-agregar"
+              data-nombre="Antiparacitante"
+              data-precio="95000"
+            >
+              Agregar al carrito
             </button>
+          </div>
         </div>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="col-md-3 mb-3">
+        <div class="card h-100">
+          <img
+            src="https://www.agrocampo.com.co/media/catalog/product/cache/dd0974c17aa11c1008feb0c4f8e4080c/3/3/333302456-min.jpg"
+            class="card-img-top"
+            alt="Juguete"
+          />
+
+          <div class="card-body">
+            <h5 class="card-title">Juguete Mordedor</h5>
+            <p class="card-text">$15.000</p>
+
+            <button
+              class="btn btn-primary btn-agregar"
+              data-nombre="Juguete Mordedor"
+              data-precio="15000"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="col-md-3 mb-3">
+        <div class="card h-100">
+          <img
+            src="https://carulla.vteximg.com.br/arquivos/ids/23378449/arnes-pechera-ajustable-con-correa-para-perro-y-gato-talla-s-purpura.jpg?v=638943322519200000"
+            class="card-img-top"
+            alt="Correa"
+          />
+
+          <div class="card-body">
+            <h5 class="card-title">Correa Ajustable</h5>
+            <p class="card-text">$25.000</p>
+
+            <button
+              class="btn btn-primary btn-agregar"
+              data-nombre="Correa Ajustable"
+              data-precio="25000"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Productos b -->
+      <div class="col-md-3 mb-3">
+        <div class="card h-100">
+          <img
+            src="https://media.falabella.com/sodimacCO/685457_01/w=1500,h=1500,fit=cover"
+            class="card-img-top"
+            alt="Cama"
+          />
+
+          <div class="card-body">
+            <h5 class="card-title">Cama para Mascota</h5>
+            <p class="card-text">$80.000</p>
+
+            <button
+              class="btn btn-primary btn-agregar"
+              data-nombre="Cama para Mascota"
+              data-precio="80000"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!-- CARRITO -->
 
+        <div id="caja-carrito" class="mt-5">
+        <h2 class="mb-3">Carrito de Compras</h2>
+        <ul id="lista-carrito" class="list-group mb-3"></ul>
+        <h4>Total: $<span id="total">0</span></h4>
+        <button id="btn-vaciar" class="btn btn-close-white">Vaciar carrito</button>
+        </div>
 
     <script src="app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
